@@ -1,0 +1,27 @@
+plPL Publico a Privado
+[azure-docs-pr.pl-pl]
+
+git remote add upstream https://github.com/Microsoft/azure-docs-pr.pl-pl.git
+
+================================================================
+
+git checkout live-oldev
+git pull
+
+================================================================
+
+git pull upstream live-oldev
+git pull upstream live-oldev:FromPublicRepo
+git checkout FromPublicRepo
+git pull https://github.com/Microsoft/azure-docs.pl-pl.git live
+git push upstream FromPublicRepo
+
+================================================================
+
+URL
+https://github.com/Microsoft/azure-docs-pr.pl-pl
+
+================================================================
+
+git checkout live
+git pull
